@@ -17,7 +17,7 @@ body {
   font-family: "Barlow Semi Condensed", sans-serif;
   background-color: var(--lightGrey);
 }
-.container > article {
+.container article {
   padding: 20px;
   height: auto;
   border-radius: 10px;
@@ -25,7 +25,7 @@ body {
   min-width: 300px;
   margin: 1rem auto;
 }
-.container > article:first-child {
+.container article:first-child {
   background-image: url("/images/bg-pattern-quotation.svg");
   background-repeat: no-repeat;
   background-position: right;
@@ -42,23 +42,23 @@ body {
   z-index: -10;
   border-radius: 10px;
 }
-.container > article:nth-child(2) {
+.container article:nth-child(2) {
   background-color: var(--veryDarkGrayishBlue);
   color: var(--white);
 }
-.container > article:nth-child(4) {
+.container article:nth-child(4) {
   background-color: var(--veryDarkBlackishBlue);
   color: var(--white);
 }
-.container > article:nth-child(3),
-.container > article:last-child {
+.container article:nth-child(3),
+.container article:last-child {
   background-color: var(--white);
 }
-.container article > h1 {
+.container article h1 {
   font-size: 1.25rem;
   font-weight: 700;
 }
-.container article > p {
+.container article p {
   font-size: 0.8rem;
   font-weight: 300;
   line-height: 1.25rem;
