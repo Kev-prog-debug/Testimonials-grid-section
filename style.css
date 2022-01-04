@@ -17,6 +17,9 @@ body {
   font-family: "Barlow Semi Condensed", sans-serif;
   background-color: var(--lightGrey);
 }
+.container {
+  max-width: 1440px;
+}
 .container article {
   padding: 20px;
   height: auto;
@@ -54,11 +57,11 @@ body {
 .container article:last-child {
   background-color: var(--white);
 }
-.container article h1 {
+.container article > h2 {
   font-size: 1.25rem;
   font-weight: 700;
 }
-.container article p {
+.container article > p {
   font-size: 0.8rem;
   font-weight: 300;
   line-height: 1.25rem;
@@ -76,14 +79,14 @@ body {
 .user-info {
   margin-left: 0.5rem;
 }
-.user-info h2 {
-  font-size: 1.05rem;
+.user-info > h1 {
+  font-size: 1.5rem;
   font-weight: 700;
   margin: 5px 0;
 }
-.user-info h1 {
-  font-size: 0.75rem;
-  font-weight: 500;
+.user-info > h2 {
+  font-size: 1rem;
+  font-weight: lighter;
   margin: 5px 0;
 }
 
@@ -111,15 +114,15 @@ body {
     max-width: 90%;
     min-width: 300px;
   }
-  .container article p {
+  .container article > p {
     font-size: 1.05rem;
     line-height: 1.5rem;
   }
   .container article:first-child {
     grid-column: 1 / span 2;
-    height: 300px;
+    max-width: 800px;
   }
-  .container article:first-child h1 {
+  .container article:first-child h2 {
     margin: 5px 0;
   }
   .container article:last-child {
@@ -129,6 +132,7 @@ body {
   .container article:nth-child(4) {
     grid-column: 2 / span 2;
     grid-row: 2 / 3;
+    max-width: 800px;
     /* margin: 0 15px; */
   }
 }
